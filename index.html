@@ -66,15 +66,26 @@
         <li>Other cats</li>
         <li>Thunder</li>
       </ol>
-      <input type="text" />
       <form action="https://freecatphotoapp.com/submit-cat-photo">
         <input type="text" placeholder="cat photo URL" required>
+        <br>
         <label for="indoor">
           <input id="indoor" type="radio" name="indoor-outdoor"> indoor
         </label>
         <label for="outdoor">
       <input type="radio" id="outdoor" name="indoor-outdoor"> outdoor
     </label>
+    <br>
+    <label for="friendly">
+      <input type="checkbox" name="personality" id="friendly"> Friendly
+    </label>
+    <label for="impulsive">
+      <input type="checkbox" name="personality" id="impulsive"> Impulsive
+    </label>
+    <label for="aggressive">
+      <input type="checkbox" name="personality" id="aggressive"> Aggressive
+    </label>
+    <br>
         <button type="submit">Submit</button>
     </main>
     <footer id="footer">Copyright Cat Photo App</footer>
