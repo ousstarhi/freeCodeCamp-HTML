@@ -56,26 +56,30 @@
         reason. Meow to be let out play time intently sniff hand run outside as
         soon as door open yet destroy couch.
       </p>
-      <ul>
-        <li>Milk</li>
-        <li>Playing</li>
-        <li>Dogs</li>
-      </ul>
-      <ol>
-        <li>Water</li>
-        <li>Other cats</li>
-        <li>Thunder</li>
-      </ol>
+      <div>
+        <ul>
+          <li>Milk</li>
+          <li>Playing</li>
+          <li>Dogs</li>
+        </ul>
+        <ol>
+          <li>Water</li>
+          <li>Other cats</li>
+          <li>Thunder</li>
+        </ol>
+      </div>
+      
       <form action="https://freecatphotoapp.com/submit-cat-photo">
         <input type="text" placeholder="cat photo URL" required>
         <br>
         <label for="indoor">
-          <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> indoor
+          <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked required> indoor
         </label>
         <label for="outdoor">
       <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> outdoor
     </label>
     <br>
+    
     <label for="friendly">
       <input type="checkbox" name="personality" id="friendly" value="fiendly"> Friendly
     </label>
@@ -85,6 +89,7 @@
     <label for="aggressive">
       <input type="checkbox" name="personality" id="aggressive" value="aggressive"> Aggressive
     </label>
+  
     <br>
         <button type="submit">Submit</button>
     </main>
