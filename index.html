@@ -51,6 +51,10 @@
       [alt='cat image'] {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
+      .relative {
+        position: relative;
+        bottom: 10px;
+      }
       @media (max-width: 350px) {
         :root {
         --main-bg-color: rgb(251, 255, 0);
@@ -77,7 +81,7 @@
       class="smaller-image thick-green-border"/></a>
 
       <p>
-        Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching
+        Kitty ipsum <span class="relative">relative position</span> dolor sit amet, shed everywhere shed everywhere stretching
         attack your ankles chase the red dot, hairball run catnip eat the grass
         sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed
         everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
