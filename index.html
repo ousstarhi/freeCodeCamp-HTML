@@ -67,6 +67,28 @@
         float: right;
         width: 30%;
       }
+      #zIndex {
+        position: relative;
+        height: 150px;
+        width: 100%;
+      }
+      #first {
+        position: absolute;
+
+        width: 50%;
+        height: 100px;
+        background-color: red;
+        z-index: 2;
+      }
+      #second {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50%;
+        height: 100px;
+        background-color: blue;
+        z-index: 1;
+      }
       
       @media (max-width: 350px) {
         :root {
@@ -109,6 +131,14 @@
         attack your ankles chase the red dot, hairball run catnip eat the grass
         sniff.
       </p>
+      <div id="zIndex">
+      <div id="first">
+
+      </div>
+      <div id="second">
+
+      </div>
+    </div>
       <p>
         Purr jump eat the grass rip the couch scratched sunbathe, shed
         everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
