@@ -28,6 +28,7 @@
         font-style: italic;
         text-align: justify;
         line-height: 25px;
+        clear: both;
       }
       .smaller-image {
         width: 100px;
@@ -55,6 +56,18 @@
         position: relative;
         bottom: 10px;
       }
+      #left {
+        width: 50%;
+        height: 100px;
+        background-color: green;
+        float: left;
+        margin-bottom: 10px;
+      }
+      #right {
+        float: right;
+        width: 30%;
+      }
+      
       @media (max-width: 350px) {
         :root {
         --main-bg-color: rgb(251, 255, 0);
@@ -75,11 +88,18 @@
         <a href="https://freecatphotoapp.com" target="_blank" class="blue-text">cat photos</a>
       </p>
       <p><a href="#" class="blue-text">This is a dead link</a></p>
+      <div>
       <a href="#footer" class="blue-text">Jump to Bottom</a>
-      <a href="https://freecatphotoapp.com" target="_blank"
+    </div>
+      <div id="right">
+      <a href="https://freecatphotoapp.com" target="_blank" class="float-right"
         ><img src="https://bit.ly/fcc-relaxing-cat" alt="cat image"
       class="smaller-image thick-green-border"/></a>
+      </div>
+      <div id="left">
 
+      </div>
+      
       <p>
         Kitty ipsum <span class="relative">relative position</span> dolor sit amet, shed everywhere shed everywhere stretching
         attack your ankles chase the red dot, hairball run catnip eat the grass
