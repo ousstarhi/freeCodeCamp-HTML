@@ -68,6 +68,13 @@
         background-color: green;
         float: left;
         margin-bottom: 10px;
+        animation-name: scaling;
+        animation-duration: 5s;
+      }
+      @keyframes scaling {
+        100% {
+          transform: scale(1.5);
+        } 
       }
       #left:hover {
         transform: skewX(24deg);
@@ -83,7 +90,6 @@
       }
       #first {
         position: absolute;
-
         width: 50%;
         height: 100px;
         background-color: red;
