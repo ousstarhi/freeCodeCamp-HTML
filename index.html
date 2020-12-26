@@ -56,7 +56,14 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
       [alt='cat image']:hover {
-        transform: scale(1.5);
+        animation-name: rotation;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes rotation {
+        100% {
+          transform: scale(1.5) rotate(180deg);
+        }
       }
       .relative {
         position: relative;
@@ -68,16 +75,16 @@
         background-color: green;
         float: left;
         margin-bottom: 10px;
+      }
+      #left:hover {
         animation-name: scaling;
         animation-duration: 5s;
+        animation-fill-mode: forwards;
       }
       @keyframes scaling {
         100% {
-          transform: scale(1.5);
+          transform: scale(1.5) skewX(-24deg);
         } 
-      }
-      #left:hover {
-        transform: skewX(24deg);
       }
       #right {
         float: right;
