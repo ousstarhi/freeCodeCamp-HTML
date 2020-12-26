@@ -106,7 +106,39 @@
         box-shadow: -25px 5px rgb(219, 189, 18);
         border-radius: 50%;
       }
-      
+      #heart {
+        margin: 10px auto;
+        position: relative;
+        background-color: red;
+        width: 70px;
+        height: 70px;
+        transform: rotate(-45deg);
+        border-radius: 2px;
+      }
+      #heart::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: -35px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+      #heart::after {
+        content: "";
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 35px;
+      }
       @media (max-width: 350px) {
         :root {
         --main-bg-color: rgb(251, 255, 0);
@@ -165,6 +197,9 @@
         everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
       </p>
       <div id="moon">
+
+      </div>
+      <div id="heart">
 
       </div>
       <p>
