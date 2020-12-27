@@ -118,6 +118,22 @@
         background-color: transparent;
         box-shadow: -25px 5px rgb(219, 189, 18);
         border-radius: 50%;
+        position: relative;
+        animation-name: moving-moon;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes moving-moon {
+        0% {
+          left: 0px;
+        }
+        50% {
+          left: 100px;
+        }
+        100% {
+          left: 0px;
+        }
       }
       #heart {
         margin: 10px auto;
@@ -127,6 +143,15 @@
         height: 70px;
         transform: rotate(-45deg);
         border-radius: 2px;
+        animation-name: heart-beat;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes heart-beat {
+        100% {
+          transform: scale(1.2) rotate(-45deg);
+        }
       }
       #heart::before {
         content: "";
